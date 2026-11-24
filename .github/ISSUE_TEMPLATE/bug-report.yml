@@ -1,0 +1,21 @@
+name: Problem report / Sorun bildir
+description: Report a reproducible issue with Cashbook Lite.
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Reports are public. Use sample data and remove personal information from screenshots. Please keep ledger files, backups, and passwords private.
+        Bildirimler herkese açıktır. Örnek veri kullanın ve ekran görüntülerinden kişisel bilgileri kaldırın. Kasa dosyalarını, yedekleri ve parolaları paylaşmayın.
+  - type: input
+    id: version
+    attributes:
+      label: App version and Windows version / Uygulama ve Windows sürümü
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce / Tekrarlama adımları
+      description: Include what happened and what you expected.
+    validations:
+      required: true
